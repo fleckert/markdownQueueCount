@@ -15,7 +15,8 @@ const httpTrigger: AzureFunction = async function (context: Context, req: HttpRe
     const queues = queueServiceClient.listQueues();
 
     let markdown = `|name|approximateMessagesCount|${EOL}`;
-
+    markdown += `|-|-|${EOL}`;
+    
     for await (const queue of queues) {
         const queueClient = new QueueClient(`${url}/${queue.name}`, credential);
 
