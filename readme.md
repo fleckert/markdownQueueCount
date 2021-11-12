@@ -1,0 +1,1 @@
+sample code for https://github.com/fleckert/notes/blob/main/posts/azure-dashboard-storage-queue-length/azure-dashboard-storage-queue-length.md 
